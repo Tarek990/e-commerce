@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(183, 206, 217);
+}
+.container-fluid div{
+    margin-top: 25px;
+}
+.title{
+    cursor: pointer;
+    font-size: 35px;
+}
+.userinfo li{
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+}
+.links ul li{
+    display: inline-block;
+    margin: 5px;
+    list-style-type: none;
+}
+.login{
+    border: 1px solid rgb(29, 51, 148);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(29, 51, 148);
+}
+.login a{
+    text-decoration: none;
+    color: rgb(29, 51, 148);
+}
+.register{
+    border: 1px solid rgb(36, 132, 41);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(36, 132, 41);
+}
+.register a{
+    text-decoration: none;
+    color: rgb(36, 132, 41);
+}
+.login:hover{
+   background-color: rgb(19, 35, 114);
+    color: white;
+    transition: 0.5s;
+}
+.login:hover a{
+    color: white;
+    /* transition: 0.5s; */
+}
+.register:hover{
+    background-color: rgb(38, 87, 38);
+    color: white;
+    transition: 0.5s;
+}
+.register:hover a{
+    
+    color: white;
+    /* transition: 0.5s; */
+}
+.founditem{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+   
+   
+}
+.search-bar{
+    width: 30%;
+}
+#select-search{
+    width: 100%;
+    height: 30px;
+}
+.search-input{
+    width: 40%;
+    
+}
+.search{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 5px;
+}
+.search-btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.search-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.card{
+    margin-top: 40px;
+    text-align: center;
+    transition: 1s;
+}
+.allproducts{
+    /* display: flex !important; */
+    /* justify-content: center !important; */
+    flex-wrap: wrap !important;
+     gap: 20px; 
+}
+.card-img-top{
+    object-fit: contain;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    border: 1px solid rgb(55, 150, 252);
+    cursor: pointer;
+}
+
+.container-register{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(200, 233, 239);
+    padding: 50px;
+    border-radius: 10px;
+}
+.user-name{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: auto;
+    /* background-color: rgb(1, 47, 252); */
+}
+.f-name{
+    width: 50%;
+   display: block;
+    
+}
+.l-name{
+    width: 50%;
+}
+.fname-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    margin-top:5px;
+    border: 0.5px solid black;
+}
+.lname-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    margin-top:5px;
+    border: 0.5px solid black;
+}
+.email{
+    margin: 20px;
+}
+.password{
+    margin: 20px;
+}
+.email-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 5px;
+     display: block;
+    margin-top:5px
+}
+.password-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 5px;
+     display: block;
+    margin-top:5px
+}
+.register-btn{
+    width: 120px;
+    height: 45px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+    display: block;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.register-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.login-p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.logout{
+     border: 1px solid rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.logout:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(230, 218, 218);
+    transition: 0.5s;
+}
+.viewcart{
+    display: block;
+    /* width: 100px; */
+    text-align: center;
+    /* padding-left: 100px; */
+}
+.user{
+    display: block;
+    padding: 10px;
+}
+.carticon{
+    cursor: pointer;
+    font-size: 30px;
+    margin:0 15px;
+    color: rgb(72, 129, 244);
+}
+.carticon:hover{
+    color: rgb(74, 80, 83);
+}
+
+
+.links2{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgb(244, 245, 245);
+    padding: 5px;
+    width: 160px;
+}
+.links2 li div{
+    width:150px;
+
+}
+.links2 li div p:hover{
+    color: blue;
+}
+.user{
+    position: relative;
+    
+}
+.cart{
+    position: relative;
+}
+.cartcount{
+    position: absolute;
+    top: -12px;
+    right: 5px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.username{
+    font-size: 22px;
+}
+.viewcart{
+    text-decoration:none ;
+    font-size: 28px;
+    color: rgb(119, 213, 235);
+}
+.viewcart:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    text-decoration: underline;
+}
+.cartproducts P{
+    font-size: 20px;
+}
+.fs-4 { 
+    color: grey; 
+    transition: .2s; 
+    background-color: ;
+}
+.fs-4:hover {
+     color: rgb(246, 221, 221);
+}
+.cart-container{
+    margin: auto; 
+    width: 80%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    gap: 10px;
+   
+  
+}
+
+.logo{
+    /* width: 100%; */
+    background-color: rgb(250, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
