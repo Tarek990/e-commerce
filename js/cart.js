@@ -23,7 +23,7 @@ function drawitems(item){
     }).join('')
     allproducts.innerHTML = y
 
-    // بعد ما نرسم المنتجات نغير شكل الأزرار كلها
+    
     let rmvbtns = document.querySelectorAll(".remove-btn")
     rmvbtns.forEach(btn => {
         btn.addEventListener("click", function(){
@@ -32,16 +32,16 @@ function drawitems(item){
     })
 }
 
-// دالة إزالة المنتج من الكارت
 function removeFromCart(id){
     let productsincart = JSON.parse(localStorage.getItem("productsincart")) || []
     let updated = productsincart.filter(item => item.id != id)
     localStorage.setItem("productsincart", JSON.stringify(updated))
-    drawitems(updated) // إعادة رسم الصفحة بعد الحذف
+    drawitems(updated)  
 }
 
  let title = document.querySelector(".title")
 
  title.addEventListener("click",function(){
     window.location = "index.html"
+
  })
