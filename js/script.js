@@ -149,14 +149,12 @@ function addtocard(id){
     }
 }
 //////////////////////////////////////////////////
-let favitem = document.querySelectorAll(".fs-4"); // القلوب كلها
+let favitem = document.querySelectorAll(".fs-4"); 
 
-// نجيب الداتا المخزنة قبل كدا من localStorage
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-// عند تحميل الصفحة -> نلون القلوب اللي اتعملها لايك
 favitem.forEach((heart) => {
-    let productId = heart.dataset.id; // نخلي كل قلب ليه data-id = id بتاع المنتج
+    let productId = heart.dataset.id; 
 
     if (favorites.includes(productId)) {
         heart.style.color = "red";
@@ -164,16 +162,13 @@ favitem.forEach((heart) => {
 
     heart.addEventListener("click", function () {
         if (favorites.includes(productId)) {
-            // لو موجود -> نشيله
             favorites = favorites.filter(id => id !== productId);
             heart.style.color = "black";
         } else {
-            // لو مش موجود -> نضيفه
             favorites.push(productId);
             heart.style.color = "red";
         }
 
-        // نخزن التحديث
         localStorage.setItem("favorites", JSON.stringify(favorites));
     });
 });
@@ -216,4 +211,5 @@ searchInput.addEventListener("keyup", function() {
 
 
 ///////////////////////////////////////////////////////////////
+
 
